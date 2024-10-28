@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar img{
+    height: 32px;
+}
+
+header nav li a{
+    font-family: "Montserrat", sans-serif;
+}
+
+.nav-link{
+    text-align: center;
+}
+
+a.nav-link.active.custom-link{
+    color: #fff;
+    background-color: #25b6bb;
+}
+
+a.nav-link.custom-link{
+    color: #25b6bb;
+}
+
+button.navbar-toggler{
+    margin-bottom: 12px;
+}
+
+section{
+    padding-top: 70px;
+}
+
+header{
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+#carousel-exemplo {
+    width: 100%; 
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex; /* Flex para alinhar itens */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.carousel-inner img {
+    max-width: 100%; /* Garante que a imagem não exceda a largura */
+    max-height: 100%; /* Garante que a imagem não exceda a altura */
+    object-fit: contain; /* Ajusta a imagem para caber dentro do contêiner */
+}
+
+.container > section{
+    padding-top: 20px;
+}
+
+#inicio h2,
+#cursos h2,
+#professores h2,
+#contato h2{
+    font-family: "Space Grotesk", serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 500px;
+    margin-bottom: 50px;
+    margin-top: 60px;
+}
+
+#inicio p{
+    width: 500px;
+    letter-spacing: 1px;
+}
+
+#inicio{
+    display: flex;
+    justify-content: space-between;
+}
+
+#inicio img{
+    height: 700px
+}
+
+h3.card-title{
+    font-family: "Space Grotesk", serif;
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+h4.card-subtitle{
+    font-family: "Space Grotesk", serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+p.card-text{
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+}
+
+a.btn.btn-primary{
+    background-color: #252525;
+    color: #fff;
+    font-family: "Space Grotesk", serif;
+    text-transform: uppercase;
+    border: none;
+}
+
+#cursos .card img {
+    width: 100%; /* Ajuste para o tamanho desejado */
+    height: auto;
+    padding: 20px;
+}
+
+#cursos .card,
+#professores .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Ajuste os valores conforme necessário */
+}
+
+.card:hover {
+    transform: translateY(-12px);
+}
+
+div#ketlin{
+    margin-top: 380px;
+    color: #fff;
+    max-width: 1024px;
+    width: 100%;
+}
+
+
+#professores p.card-text{
+    margin-top: 0;
+}
+
+.form-contato{
+    font-family: "Montserrat", sans-serif;
+    width: 500px;
+}
+
+.form-contato label{
+    margin-top: 24px;
+}
+
+textarea.form-control{
+    resize: none;
+}
+
+.form-switch .form-check-input {
+    margin-top: 27px;
+}
+
+.btn-success{
+    margin-top: 20px;
+}
+
+footer{
+    font-family: "Montserrat", sans-serif;
+    padding: 40px;
+    border-top: 1px solid;
+    margin-top: 40px;
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1400px){
+    div#ketlin{
+        margin-top: 300px;
+        font-size: 14px;
+    }
+
+    }
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    h3.card-title{
+        font-size: 22px;
+    }
+
+    h4.card-subtitle{
+        font-size: 14px;
+    }
+
+    p.card-text{
+        font-size: 12px;
+    }
+    
+    div#ketlin{
+        margin-top: 240px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    #inicio h2,
+#cursos h2,
+#professores h2,
+#contato h2{
+    width: 320px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+#inicio p{
+    width: 330px;
+    letter-spacing: 1px;
+}
+
+#inicio{
+    display: flex;
+    justify-content: space-between;
+}
+
+#inicio img{
+    height: 700px;
+    margin-top: 60px;
+}
+
+h3.card-title{
+    font-size: 22px;
+}
+
+h4.card-subtitle{
+    font-size: 14px;
+}
+
+p.card-text{
+    font-size: 12px;
+}
+
+div#ketlin{
+    margin-top: 300px;
+    font-size: 14px;
+}
+
+}
+
+@media screen and (min-width: 375px) and (max-width:767px) {
+    #inicio h2,
+#cursos h2,
+#professores h2,
+#contato h2{
+    width: 300px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+#inicio p{
+    width: 300px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+#inicio{
+    display: block;
+    justify-content: space-between;
+}
+
+#inicio img{
+    height: 500px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+div#ketlin{
+    margin-top: 140px;
+    font-size: 12px;
+}
+
+.form-contato{
+    width: 250px;
+}
+
+.container{
+    max-width: 90%;
+}
+}
